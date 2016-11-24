@@ -1,0 +1,14 @@
+extends layout
+
+block body
+  div.col-md-12
+    div
+      h1.text-center= title
+      div.row.col-md-12#buttons
+        button#start.btn.btn-success(type="button") Start Server
+        button#stop.btn.btn-danger(type="button") Stop Server
+      div.row
+        ul#log-mine-server.list-unstyled.center-block
+      div.row.input-group.col-md-8#buttons
+        input(type="text" placeholder="Insert the command")#commands.form-control
+            
